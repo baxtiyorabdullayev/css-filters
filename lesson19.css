@@ -1,0 +1,71 @@
+*{
+	box-sizing: border-box;
+}
+
+.container {
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+i {
+	font-size: 30px;
+	margin-left: 10px;
+	color: #000099;
+}
+ .pic {
+ 	margin-top: 15px;
+ }
+
+ /*Hovers*/
+i:hover {
+	transform: translateY(-5px);
+	color: red;
+	cursor: pointer;
+}
+
+div > i:nth-child(1):hover ~ img {
+	filter: brightness(250%);
+}
+
+div > i:nth-child(2):hover ~ img {
+	 filter: contrast(180%);
+}
+
+div > i:nth-child(3):hover ~ img {
+	 filter: blur(4px);
+}
+
+div > i:nth-child(4):hover ~ img {
+	 filter: grayscale(100%);
+}
+
+div > i:nth-child(5):hover ~ img {
+	 filter: hue-rotate(180deg);
+}
+
+div > i:nth-child(6):hover ~ img {
+	 filter: invert(100%);
+}
+
+div > i:nth-child(7):hover ~ img {
+	 filter: opacity(50%);
+}
+
+div > i:nth-child(8):hover ~ img {
+	 filter: saturate(7);
+}
+
+div > i:nth-child(9):hover ~ img {
+	 filter: sepia(100%);
+}
+
+div > i:nth-child(10):hover ~ img {
+	 transform: scale(0.5);
+}
+
+div > i:nth-child(11):hover ~ img {
+	 filter: opacity(0);
+}
